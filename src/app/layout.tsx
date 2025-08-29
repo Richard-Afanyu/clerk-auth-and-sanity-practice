@@ -45,10 +45,13 @@ export default function RootLayout({
                   Sign Up
                 </button>
               </SignUpButton>
+              <Link href="/about">About</Link>
             </SignedOut>
             <SignedIn>
               <UserButton />
+              <Link href="/">Home</Link>
               <Link href="/dashboard">Dashboard</Link>
+              <Link href="/about">About</Link>
             </SignedIn>
           </header>
           {children}
